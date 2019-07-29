@@ -1,0 +1,17 @@
+.app-nav-container {
+    position: fixed;
+    top: 0;
+    min-height: 60px;
+    width: 100%;
+}
+
+.app-content {
+    margin-top: 60px;
+    overflow: hidden;
+    border: 1px solid red;
+    height: 100vh
+}
+
+.app-footer {
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+nav {
+    background-color: #44ACA3;
+}
+
+@media only screen and (min-width: 992px) {
+    .app-nav-expand {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
