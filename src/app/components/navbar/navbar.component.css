@@ -2,6 +2,26 @@ nav {
     background-color: #44ACA3;
 }
 
+#app-nav-container {
+    width: 100%;
+    padding: 0 1em;
+}
+
+#app-search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+#app-search-container h2 {
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+
 @media only screen and (min-width: 992px) {
     .app-nav-expand {
         display: flex;
