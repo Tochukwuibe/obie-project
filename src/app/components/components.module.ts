@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutComponent } from './layout/layout.component';
 import { FooterComponent } from './footer/footer.component';
+import { CollapseComponent } from './collapse/collapse.component';
+import { CollapseListComponent } from './collapse-list/collapse-list.component';
 
 
 
@@ -10,7 +12,9 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     NavbarComponent,
     LayoutComponent,
-    FooterComponent
+    FooterComponent,
+    CollapseComponent,
+    CollapseListComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +22,9 @@ import { FooterComponent } from './footer/footer.component';
   exports: [
     NavbarComponent,
     LayoutComponent,
-    FooterComponent
+    FooterComponent,
+    CollapseComponent,
+    CollapseListComponent
   ]
 })
 export class ComponentsModule { }
