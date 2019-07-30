@@ -1,2 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --app-primary: #44ACA3;
+}
+
+button.app-btn {
+    display: block;
+    margin: .5em;
+    padding: .4em;
+    width: 200px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+button.app-btn-secondary {
+    background-color: white;
+    color: var(--app-primary);
+    border: 1px solid var(--app-primary);
+}
+
+button.app-btn-primary {
+    background-color: var(--app-primary);
+    color: white;
+}
+
+button.app-btn-sm {
+   width: 50px;
+}
+
+button.app-btn-md {
+    width: 90px;
+ }

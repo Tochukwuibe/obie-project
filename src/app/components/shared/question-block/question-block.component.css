@@ -1,0 +1,7 @@
+.app-block-container {
+
+}
+
+.app-block-container > hr {
+    border: 0.6px solid black;
+}
