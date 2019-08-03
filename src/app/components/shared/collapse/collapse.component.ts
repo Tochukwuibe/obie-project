@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Faq } from 'src/app/services/questions.service';
 
 @Component({
   selector: 'app-collapse',
@@ -7,20 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CollapseComponent implements OnInit {
 
- @Input('question') question: string;
- @Input('answer') answer: string;
+  @Input() faq: Faq;
 
- @Input('id') id: string;
 
- public heading: string;
- public collapse: string;
  
 
   constructor() { }
 
   ngOnInit() {
-    this.heading = this.id + 'heading';
-    this.collapse = this.id + 'collapse';
+    
   }
 
 }

@@ -1,0 +1,12 @@
+.app-faq-preview > hr {
+   margin: 0;
+   border: 0.6px solid #707070;
+   text-shadow: #707070
+}
+
+
+
+
+.app-faq-preview > p {
+    font-size: 18;
+ }

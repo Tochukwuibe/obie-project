@@ -2,15 +2,15 @@
 
   <div id="app-nav-container">
     <div class="row">
-      <div class="col-12 col-md-4">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <div class="col-12 col-md-5">
+        <img src="../../../../assets/images/logo-primary.PNG" alt="interbibler">
       </div>
 
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-7">
         <div id="app-search-container">
           <h2>FAQs</h2>
 
-          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+          <button id="search-toggler" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-search app-search"></i>
           </button>
@@ -23,7 +23,11 @@
   <div class="collapse navbar-collapse app-nav-expand" id="navbarSupportedContent">
 
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <div id="app-search-bar-container">
+          <i class="fa fa-search"></i>
+        <input id="app-search-bar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </div>
+
     </form>
 
   </div>

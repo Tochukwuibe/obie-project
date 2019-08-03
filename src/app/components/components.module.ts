@@ -12,6 +12,7 @@ import { FaqPreviewComponent } from './shared/faq-preview/faq-preview.component'
 import { QuestionsListComponent } from './shared/questions-list/questions-list.component';
 import { QuestionBlockComponent } from './shared/question-block/question-block.component';
 import { FaqPreviewItemComponent } from './shared/faq-preview-item/faq-preview-item.component';
+import { DirectivesModule } from '../directives/directives.module';
 
 
 
@@ -30,7 +31,8 @@ import { FaqPreviewItemComponent } from './shared/faq-preview-item/faq-preview-i
     FaqPreviewItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DirectivesModule
   ],
   exports: [
     NavbarComponent,
@@ -42,7 +44,8 @@ import { FaqPreviewItemComponent } from './shared/faq-preview-item/faq-preview-i
     FaqPreviewComponent,
     FaqComponent,
     QuestionsListComponent,
-    QuestionBlockComponent
+    QuestionBlockComponent,
+    FaqPreviewItemComponent
   ]
 })
 export class ComponentsModule { }

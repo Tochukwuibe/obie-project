@@ -1,0 +1,19 @@
+
+
+.app-md {
+    display: block
+}
+
+.app-lg {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    
+.app-md {
+    display: none
+}
+ .app-lg {
+     display: block;
+ }
+}

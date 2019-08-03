@@ -1,7 +1,7 @@
 <div>
     <hr>
     <p>Content</p>
-    <app-faq-preview-item></app-faq-preview-item>
-    <app-faq-preview-item></app-faq-preview-item>
+    
+    <app-faq-preview-item *ngFor="let faq of faqs" [faq]="faq"></app-faq-preview-item>
 
 </div>

@@ -3,5 +3,18 @@
 }
 
 .app-block-container > hr {
-    border: 0.6px solid black;
+    border: 0.6px solid #707070;
+    text-shadow: #707070
 }
+
+.app-block-container > h1 {
+   font-weight: bold;
+   font-size: 36;
+}
+
+
+.app-block-container > p {
+    font-weight: 400;
+    font-size: 24;
+    color: #707070
+ }

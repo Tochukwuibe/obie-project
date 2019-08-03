@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Faq } from 'src/app/services/questions.service';
 
 @Component({
   selector: 'app-faq-preview-item',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./faq-preview-item.component.css']
 })
 export class FaqPreviewItemComponent implements OnInit {
+
+  @Input() faq: Faq;
 
   constructor() { }
 

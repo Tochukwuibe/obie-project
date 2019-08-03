@@ -1,5 +1,14 @@
 <app-layout>
-    <!-- <app-collapse-list></app-collapse-list> -->
-    <app-questions-list></app-questions-list>
+
+    <div class="app-md">
+        <app-collapse-list [faqs]="faqs"></app-collapse-list>
+    </div>
+
+
+    <div class="app-lg">
+        <app-questions-list [faqs]="faqs"></app-questions-list>
+    </div>
+
+
     <app-paginator></app-paginator>
 </app-layout>

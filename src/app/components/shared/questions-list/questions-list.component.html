@@ -1,10 +1,8 @@
 <div class="row">
     <div class="col-2">
-        <app-faq-preview></app-faq-preview>
+        <app-faq-preview [faqs]="preview" ></app-faq-preview>
     </div>
     <div class="col-10">
-        <app-question-block></app-question-block>
-        <app-question-block></app-question-block>
-        <app-question-block></app-question-block>
+        <app-question-block *ngFor="let faq of faqs" [faq]="faq"></app-question-block>
     </div>
 </div>

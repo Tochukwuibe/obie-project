@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Faq } from 'src/app/services/questions.service';
 
 @Component({
   selector: 'app-collapse-list',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./collapse-list.component.css']
 })
 export class CollapseListComponent implements OnInit {
+
+  @Input() faqs: Faq[];
 
   constructor() { }
 

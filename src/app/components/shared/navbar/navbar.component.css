@@ -5,6 +5,19 @@ nav {
 #app-nav-container {
     width: 100%;
     padding: 0 1em;
+    /* max-height: 70px */
+}
+
+#app-nav-container img {
+    height: auto;
+    width: 86px;
+    min-height: 58px;
+}
+
+#app-nav-container h2 {
+   font-size: 52;
+   font-weight: bold;
+  
 }
 
 #app-search-container {
@@ -12,14 +25,56 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     color: white;
 }
 
 #app-search-container h2 {
     font-weight: bold;
     font-size: 2em;
-
+    margin-top: 1.2em;
 }
+
+#search-toggler {
+    margin-top: 1.2em;
+}
+
+#app-search-bar {
+    border: none;
+    background-color :transparent;
+    
+    border-radius: 0;
+}
+
+
+#app-search-bar::after {
+    border: none;
+}
+
+#app-search-bar::placeholder {
+    color: white;
+    margin-left: 80px;
+}
+
+#app-search-bar-container {
+    display: block;
+    color: white;
+    position: relative;
+    border-bottom: 1px solid white;
+    margin: 0 auto;
+   
+}
+
+#app-search-bar-container > input {
+    margin-left: 15px;
+}
+
+#app-search-bar-container i {
+    position: absolute;
+    top: 25%
+}
+
+
 
 .app-search {
     color: white;
@@ -34,5 +89,15 @@ nav {
         flex-direction: row;
         justify-content: flex-end;
         width: 100%;
+    }
+
+    #app-search-container h2 {
+       
+        margin-top: .3em;
+    }
+
+    #app-search-bar-container {
+   
+        margin-right: 6.7em;
     }
 }
