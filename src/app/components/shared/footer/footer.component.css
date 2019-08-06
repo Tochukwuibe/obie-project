@@ -51,11 +51,17 @@
     width: 100%;
 }
 
-#icons div i {
+#icons div a {
     margin-right: 15px;
     font-size: 20px;
+    text-decoration: none;
+    color: white;
 }
 
+#icons div a:link {
+
+    text-decoration: none;
+}
 .logo-container {
     display: flex;
     flex-direction: column;
