@@ -8,7 +8,9 @@ import { Faq } from 'src/app/services/questions.service';
 })
 export class QuestionBlockComponent implements OnInit {
 
-  @Input() faq: Faq;
+  @Input('faq') faq: Faq;
+  @Input('onEdit') onEdit: Function;
+  @Input('onDelete') onDelete: Function;
 
   constructor() { }
 

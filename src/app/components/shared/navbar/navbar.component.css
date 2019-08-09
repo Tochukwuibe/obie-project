@@ -74,6 +74,14 @@ nav {
     top: 25%
 }
 
+#avatar-lg {
+    display: none;
+}
+
+#avatar-sm {
+    display: block;
+}
+
 
 
 .app-search {
@@ -81,6 +89,13 @@ nav {
     border: none;
     
 }
+
+#avatar-container {
+    display: flex;
+    justify-content: space-between
+}
+
+
 
 
 @media only screen and (min-width: 992px) {
@@ -99,5 +114,13 @@ nav {
     #app-search-bar-container {
    
         margin-right: 6.7em;
+    }
+
+    #avatar-lg {
+        display: block;
+    }
+    
+    #avatar-sm {
+        display: none;
     }
 }

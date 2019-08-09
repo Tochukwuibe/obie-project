@@ -1,0 +1,18 @@
+.app-badge {
+    background-color: var(--app-primary);
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 25px;
+    color: white;
+    margin: 0 1em;
+}
+
+.app-badge p{
+    display: inline-block;
+    color: white;
+    margin-left: .4em;
+    cursor: pointer;
+}

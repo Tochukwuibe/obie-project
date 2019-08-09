@@ -1,14 +1,24 @@
 <app-layout>
 
     <div class="app-md">
-        <app-collapse-list [faqs]="faqs"></app-collapse-list>
+        <app-collapse-list [onToNew]="this.onToNew" [faqs]="faqs"></app-collapse-list>
     </div>
 
 
     <div class="app-lg">
-        <app-questions-list [faqs]="faqs"></app-questions-list>
+        <app-questions-list 
+            [onToNew]="this.onToNew" 
+            [faqs]="faqs"
+            [onEdit]="onEdit"
+            [onDelete]="onDelete"
+            >
+        </app-questions-list>
     </div>
 
-
+    <!-- <app-alert-modal
+        [opened]="opened"
+        [onDismiss]="onDismiss"
+    >
+</app-alert-modal> -->
     <app-paginator></app-paginator>
 </app-layout>

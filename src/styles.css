@@ -25,6 +25,7 @@ body {
 
 :root {
     --app-primary: #44ACA3;
+    --app-btn-lg: 120px;
 }
 
 button.app-btn {
@@ -42,6 +43,13 @@ button.app-btn-secondary {
     border: 1px solid var(--app-primary);
 }
 
+button.app-btn-dark {
+    background-color: #929292;
+    color: white;
+    border: 0;
+    /* border: 1px solid var(#2B2B2B); */
+}
+
 button.app-btn-primary {
     background-color: var(--app-primary);
     color: white;
@@ -54,3 +62,21 @@ button.app-btn-sm {
 button.app-btn-md {
     width: 90px;
 }
+
+button.app-btn-lg {
+    width: var(--app-btn-lg, 120px) ;
+}
+
+.app-form-control {
+    margin: 1em 0;
+    background-color: #EBEBEB
+}
+
+input.app-form-control:focus {
+    background-color: #EBEBEB
+}
+
+textarea.app-form-control:focus {
+    background-color: #EBEBEB
+}
+

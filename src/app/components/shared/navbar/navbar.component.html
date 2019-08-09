@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg  ">
+<!-- <nav class="navbar navbar-expand-lg  ">
 
   <div id="app-nav-container">
     <div class="row">
@@ -28,6 +28,46 @@
         <input id="app-search-bar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       </div>
 
+    </form>
+
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg  ">
+
+  <div id="app-nav-container">
+    <div class="row">
+      <div id="avatar-container" class="col-12 col-md-5">
+        <img src="../../../../assets/images/logo-primary.PNG" alt="interbibler">
+        <app-avatar id="avatar-sm"></app-avatar>
+      </div>
+
+      <div class="col-12 col-md-7">
+        <div id="app-search-container">
+          <h2>FAQs</h2>
+
+          <button id="search-toggler" (click)="isCollapsed = !isCollapsed" type="button" class="navbar-toggler"
+            data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            [attr.aria-expanded]="!isCollapsed" aria-label="Toggle navigation">
+            <i class="fa fa-search app-search"></i>
+          </button>
+
+        </div>
+      
+      </div>
+     
+    </div>
+  </div>
+
+  <div class="collapse navbar-collapse app-nav-expand" [ngbCollapse]="isCollapsed" id="navbarSupportedContent">
+
+    <form class="form-inline my-2 my-lg-0">
+      <div id="app-search-bar-container">
+        <i class="fa fa-search"></i>
+        <input id="app-search-bar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+      </div>
+      <app-avatar id="avatar-lg"></app-avatar>
     </form>
 
   </div>

@@ -2,6 +2,13 @@
 
 }
 
+.actions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .app-block-container > hr {
     border: 0.6px solid #707070;
     text-shadow: #707070

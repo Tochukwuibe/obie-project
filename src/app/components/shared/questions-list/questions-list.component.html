@@ -1,8 +1,14 @@
 <div class="row">
     <div class="col-2">
         <app-faq-preview [faqs]="preview" ></app-faq-preview>
+        <app-new-faq-btn (clicked)="onToNew()" ></app-new-faq-btn>
     </div>
     <div class="col-10">
-        <app-question-block *ngFor="let faq of faqs" [faq]="faq"></app-question-block>
+        <app-question-block 
+            *ngFor="let faq of faqs" [faq]="faq"
+                [onDelete]="onDelete.bind(null, faq)"
+                [onEdit]="onEdit.bind(null, faq)"
+            >
+        </app-question-block>
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Faq } from 'src/app/services/questions.service';
 
 @Component({
@@ -9,10 +9,18 @@ import { Faq } from 'src/app/services/questions.service';
 export class CollapseListComponent implements OnInit {
 
   @Input() faqs: Faq[];
+  @Input('onToNew') onToNew: Function;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
+
+
+
+  
+
+  
 }

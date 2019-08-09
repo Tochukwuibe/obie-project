@@ -1,0 +1,28 @@
+.app-container {
+    background-color: #EBEBEB;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+h5 {
+    margin: .2em 0 0 .4em
+}
+
+hr {
+    margin: 0;
+}
+
+.header {
+    flex: .1
+}
+
+.chips-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex: .9;
+    padding: 0 1em;
+    /* color: white */
+}

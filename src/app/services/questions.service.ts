@@ -6,20 +6,21 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 
 export interface Faq {
   question: string,
-  answer: string
+  answer: string,
+  id: string;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class FaqService {
-  
+
   private faqs: Faq[] = [
-    {question: 'Some question 1', answer: answerIpsum},
-    {question: 'Some question 2', answer: answerIpsum},
-    {question: 'Some question 3', answer: answerIpsum},
-    {question: 'Some question 4', answer: answerIpsum},
-    {question: 'Some question 5', answer: answerIpsum},
+    { question: 'Some question 1', answer: answerIpsum, id: '1' },
+    { question: 'Some question 2', answer: answerIpsum, id: '2' },
+    { question: 'Some question 3', answer: answerIpsum, id: '3' },
+    { question: 'Some question 4', answer: answerIpsum, id: '4' },
+    { question: 'Some question 5', answer: answerIpsum, id: '5' },
 
   ]
 

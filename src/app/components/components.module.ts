@@ -13,6 +13,19 @@ import { QuestionsListComponent } from './shared/questions-list/questions-list.c
 import { QuestionBlockComponent } from './shared/question-block/question-block.component';
 import { FaqPreviewItemComponent } from './shared/faq-preview-item/faq-preview-item.component';
 import { DirectivesModule } from '../directives/directives.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NewFaqBtnComponent } from './shared/new-faq-btn/new-faq-btn.component';
+import { EditDeleteActionsComponent } from './shared/edit-delete-actions/edit-delete-actions.component';
+import { AlertModalComponent } from './shared/alert-modal/alert-modal.component';
+import { InputComponent } from './shared/input/input.component';
+import { CreateEditFaqComponent } from './create-edit-faq/create-edit-faq.component';
+import { DropdownComponent } from './shared/dropdown/dropdown.component';
+import { KeywordsComponent } from './shared/keywords/keywords.component';
+import { ChipsComponent } from './shared/chips/chips.component';
+import { TextEditorComponent } from './shared/text-editor/text-editor.component';
+import { CreateEditFaqActionsComponent } from './shared/create-edit-faq-actions/create-edit-faq-actions.component';
+import { AvatarComponent } from './shared/avatar/avatar.component';
+
 
 
 
@@ -28,11 +41,24 @@ import { DirectivesModule } from '../directives/directives.module';
     FaqComponent,
     QuestionsListComponent,
     QuestionBlockComponent,
-    FaqPreviewItemComponent
+    FaqPreviewItemComponent,
+    NewFaqBtnComponent,
+    EditDeleteActionsComponent,
+    AlertModalComponent,
+    InputComponent,
+    CreateEditFaqComponent,
+    DropdownComponent,
+    KeywordsComponent,
+    ChipsComponent,
+    TextEditorComponent,
+    CreateEditFaqActionsComponent,
+    AvatarComponent,
   ],
   imports: [
     CommonModule,
-    DirectivesModule
+    DirectivesModule,
+    NgbModule,
+    // RouterModule
   ],
   exports: [
     NavbarComponent,
@@ -45,7 +71,10 @@ import { DirectivesModule } from '../directives/directives.module';
     FaqComponent,
     QuestionsListComponent,
     QuestionBlockComponent,
-    FaqPreviewItemComponent
+    FaqPreviewItemComponent,
+    DirectivesModule,
+    CreateEditFaqComponent,
+    NgbModule
   ]
 })
 export class ComponentsModule { }

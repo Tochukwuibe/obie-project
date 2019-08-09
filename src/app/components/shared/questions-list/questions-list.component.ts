@@ -9,6 +9,9 @@ import { Faq } from 'src/app/services/questions.service';
 export class QuestionsListComponent implements OnInit {
 
   @Input() faqs: Faq[];
+  @Input('onToNew') onToNew: Function;
+  @Input('onEdit') onEdit: Function;
+  @Input('onDelete') onDelete: Function;
 
   private preview: Faq[];
 
@@ -18,4 +21,5 @@ export class QuestionsListComponent implements OnInit {
     this.preview = (this.faqs || []).slice(0, 5)
   }
 
+  
 }

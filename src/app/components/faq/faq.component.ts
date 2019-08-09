@@ -9,11 +9,17 @@ import { Faq } from 'src/app/services/questions.service';
 export class FaqComponent implements OnInit {
 
   @Input() faqs: Faq[];
+  @Input('onToNew') onToNew: Function;
+  @Input('onEdit') onEdit: Function;
+  @Input('onDelete') onDelete: Function;
+  @Input('opened') opened: boolean;
+  @Input('onDismiss') onDismiss: Function;
 
   constructor() { }
 
   ngOnInit() {
-    
+
   }
+
 
 }

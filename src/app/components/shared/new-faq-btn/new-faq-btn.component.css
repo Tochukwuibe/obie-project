@@ -1,0 +1,42 @@
+.new-faq-btn {
+    display: flex;
+    background-color: #5e4f86;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .7em;
+    margin: 8px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.new-faq-btn p {
+    color: white;
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.new-faq-btn i {
+    color: white;
+    margin: 0 10px 0 0;
+    font-size: 1.5em;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .new-faq-btn {
+        padding: .3em;
+        margin: 8px 0;
+    }
+
+    .new-faq-btn p {
+        margin: 0;
+        font-size: 1.1em;
+    }
+    
+    .new-faq-btn i {
+        margin: 0 10px 0 0;
+        font-size: 1.3em;
+    }
+}

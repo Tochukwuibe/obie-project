@@ -1,1 +1,9 @@
-<app-faq [faqs]="faqs"></app-faq>
+<app-faq 
+[onToNew]="this.onToNew" 
+[faqs]="this.faqs"
+[onEdit]="this.onEdit"
+[onDelete]="this.onDelete"
+[opened]="opened"
+[onDismiss]="onDismiss"
+>
+</app-faq>
