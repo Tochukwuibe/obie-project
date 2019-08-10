@@ -19,7 +19,6 @@
   .panel {
     padding: 0 18px;
     background-color: white;
-    display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
@@ -39,6 +38,16 @@
   
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+  .btn-container >  {
+    position: relative;
+  }
+  .btn-container > i {
+    position: absolute;
+    top: 3;
+    right: 2
   }
 
 

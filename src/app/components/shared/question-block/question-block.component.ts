@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Faq } from 'src/app/services/questions.service';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Faq } from 'src/app/services/faq.service';
 
 @Component({
   selector: 'app-question-block',
@@ -9,12 +9,15 @@ import { Faq } from 'src/app/services/questions.service';
 export class QuestionBlockComponent implements OnInit {
 
   @Input('faq') faq: Faq;
-  @Input('onEdit') onEdit: Function;
-  @Input('onDelete') onDelete: Function;
+  @Output('action') action = new EventEmitter<string>()
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public onAction(action) {
+    this.action.emit(action)
   }
 
 }

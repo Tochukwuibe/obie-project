@@ -3,8 +3,7 @@
     <div class="actions-container">
         <h1>{{faq.question}}</h1>
         <app-edit-delete-actions
-            [onDelete]= "onDelete"
-            [onEdit]= "onEdit"
+            (action)="onAction($event)"
         >
 
         </app-edit-delete-actions>

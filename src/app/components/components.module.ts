@@ -75,6 +75,9 @@ import { AvatarComponent } from './shared/avatar/avatar.component';
     DirectivesModule,
     CreateEditFaqComponent,
     NgbModule
+  ],
+  entryComponents:[
+    AlertModalComponent
   ]
 })
 export class ComponentsModule { }
