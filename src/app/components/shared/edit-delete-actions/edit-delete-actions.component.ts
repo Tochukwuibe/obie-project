@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { FaqService } from 'src/app/services/faq.service';
 
 @Component({
   selector: 'app-edit-delete-actions',
@@ -7,12 +8,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EditDeleteActionsComponent implements OnInit {
 
-  @Input('onDelete') onDelete: Function;
-  @Input('onEdit') onEdit: Function;
+  @Output('action') action = new EventEmitter<string>()
 
-  constructor() { }
+  constructor(private faq: FaqService) { }
 
   ngOnInit() {
+  }
+
+  public onEdit() {
+    this.faq.edit()
+  }
+
+  public onDelete() {
+    this.faq.delete()
   }
 
 }

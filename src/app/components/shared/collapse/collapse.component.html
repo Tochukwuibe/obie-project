@@ -1,6 +1,9 @@
-<div appCollapse>
-    <button class="accordion">{{faq.question}}</button>
-    <div class="panel">
+<div>
+    <button class="accordion" (click)="isCollapsed = !isCollapsed" [class.active]="!isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">{{faq.question}}</button>
+
+
+    <div class="panel" id="collapseExample" [ngbCollapse]="isCollapsed">
         <p>
             {{faq.answer}}
         </p>

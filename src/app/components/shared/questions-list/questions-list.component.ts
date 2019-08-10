@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Faq } from 'src/app/services/questions.service';
+import { Faq } from 'src/app/services/faq.service';
 
 @Component({
   selector: 'app-questions-list',
@@ -21,5 +21,9 @@ export class QuestionsListComponent implements OnInit {
     this.preview = (this.faqs || []).slice(0, 5)
   }
 
+  
+  public onAction(action: string) {
+    console.log('the action ', action);
+  }
   
 }

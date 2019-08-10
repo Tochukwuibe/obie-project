@@ -6,8 +6,7 @@
     <div class="col-10">
         <app-question-block 
             *ngFor="let faq of faqs" [faq]="faq"
-                [onDelete]="onDelete.bind(null, faq)"
-                [onEdit]="onEdit.bind(null, faq)"
+                (action)="onAction($event)"
             >
         </app-question-block>
     </div>

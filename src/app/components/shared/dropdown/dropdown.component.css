@@ -1,7 +1,26 @@
 select {
-    background-color: #EBEBEB
+    background-color: #EBEBEB;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
 }
 
 select:focus {
     background-color: #EBEBEB
 }
+
+select + i.fa {
+    float: right;
+    margin-top: -53px;
+    margin-right: 5px;
+    font-size: 28px;
+    color: #707070;
+    /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+    pointer-events: none;
+    /* everything after this is just to cover up the original arrow */
+    /* (for browsers that don't support the syntax used above) */
+    background-color: #EBEBEB;
+    padding-right: 5px;
+  }
+
+
